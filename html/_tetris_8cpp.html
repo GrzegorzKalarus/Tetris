@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tetris: Dokumentacja pliku Tetris/Tetris.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="14.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tetris
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Gra Tetris</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_tetris_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Tetris.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SFML/Graphics.hpp&gt;</code><br />
+<code>#include &lt;SFML/Audio.hpp&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+</div>
+<p><a href="_tetris_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_point.html">Point</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura opisujaca maksymalna ilosc pojedynczych kostek klocka w grze, tworzaca dwie tablice na podstawie struktury: a[4] i b[4].  <a href="struct_point.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ae1ee541bb22588b6a71650c807efca90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#ae1ee541bb22588b6a71650c807efca90">check</a> ()</td></tr>
+<tr class="memdesc:ae1ee541bb22588b6a71650c807efca90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdzajaca, czy nie wykraczamy w danym momencie poza granice pola gry.  <a href="_tetris_8cpp.html#ae1ee541bb22588b6a71650c807efca90">Więcej...</a><br /></td></tr>
+<tr class="separator:ae1ee541bb22588b6a71650c807efca90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa7da78d490e959c14c4af9d726b029"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#a0fa7da78d490e959c14c4af9d726b029">checkIfGameEnded</a> ()</td></tr>
+<tr class="memdesc:a0fa7da78d490e959c14c4af9d726b029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdzajaca, czy gra sie zakonczyla przegraną  <a href="_tetris_8cpp.html#a0fa7da78d490e959c14c4af9d726b029">Więcej...</a><br /></td></tr>
+<tr class="separator:a0fa7da78d490e959c14c4af9d726b029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:a9edc6895d567e0ddcdd3cc20df3f3b4b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#a9edc6895d567e0ddcdd3cc20df3f3b4b">M</a> = 20</td></tr>
+<tr class="separator:a9edc6895d567e0ddcdd3cc20df3f3b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b6b0c222cd1ce70d6a831f57241e59"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#ab2b6b0c222cd1ce70d6a831f57241e59">N</a> = 10</td></tr>
+<tr class="separator:ab2b6b0c222cd1ce70d6a831f57241e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f65960378fcbb6c40b6164802344289"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#a6f65960378fcbb6c40b6164802344289">field</a> [<a class="el" href="_tetris_8cpp.html#a9edc6895d567e0ddcdd3cc20df3f3b4b">M</a>][<a class="el" href="_tetris_8cpp.html#ab2b6b0c222cd1ce70d6a831f57241e59">N</a>] = { 0 }</td></tr>
+<tr class="separator:a6f65960378fcbb6c40b6164802344289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f8f4a4e39e09fdb5e9f02330ecabef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#af7f8f4a4e39e09fdb5e9f02330ecabef">points</a> = 0</td></tr>
+<tr class="separator:af7f8f4a4e39e09fdb5e9f02330ecabef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4dfbb0ce73015e84e59f7a2a6b1c57f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#ae4dfbb0ce73015e84e59f7a2a6b1c57f">disScore</a></td></tr>
+<tr class="separator:ae4dfbb0ce73015e84e59f7a2a6b1c57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87455fa0ebd69299dadd5699578587f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#a87455fa0ebd69299dadd5699578587f6">figures</a> [7][4]</td></tr>
+<tr class="separator:a87455fa0ebd69299dadd5699578587f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e36a5e70dc7317b3fe14181e94392b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#af5e36a5e70dc7317b3fe14181e94392b">a</a> [4]</td></tr>
+<tr class="separator:af5e36a5e70dc7317b3fe14181e94392b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a42585f3e9c61a77e29f5ce804c647a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_tetris_8cpp.html#a8a42585f3e9c61a77e29f5ce804c647a">b</a> [4]</td></tr>
+<tr class="separator:a8a42585f3e9c61a77e29f5ce804c647a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ae1ee541bb22588b6a71650c807efca90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ee541bb22588b6a71650c807efca90">&#9670;&nbsp;</a></span>check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdzajaca, czy nie wykraczamy w danym momencie poza granice pola gry. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>1 </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00046">46</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0fa7da78d490e959c14c4af9d726b029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa7da78d490e959c14c4af9d726b029">&#9670;&nbsp;</a></span>checkIfGameEnded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool checkIfGameEnded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdzajaca, czy gra sie zakonczyla przegraną </p>
+<dl class="section return"><dt>Zwraca</dt><dd>1 jesli tak </dd>
+<dd>
+0 jesli nie </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00059">59</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; Deklaracja funkcji losujacej srand</p>
+<p>&lt; Deklaracja funkcji generujacej okno o szerokosci 800 pixeli na 1000 pixeli wysokosci</p>
+<p>&lt; Inicjalizacja muzyki w menu gry, jesli nie uda sie odtworzyc sciezki dzwieku, w konsoli pojawi sie komunikat "ERROR"</p>
+<p>Funkcja rozpoczynajaca odtwarzanie muzyki w menu gry</p>
+<p>&lt; Deklaracja procedury pozwalajacej na rozpoczecie gry klikajac klawisz ENTER oraz wyswietlajaca grafike menu</p>
+<p>Funkcja zatrzymujaca muzyke z menu po wcisnieciu klawisza ENTER</p>
+<p>&lt; Inicjalizacja tekstury tla</p>
+<p>&lt; zaladowannie tekstury tla</p>
+<p>&lt; Ustawienie tekstury na srodek</p>
+<p>&lt; Oczyszczanie okna</p>
+<p>&lt; Wyswietlenie tekstury tla</p>
+<p>&lt; Inicjalizacja muzyki podczas gry, jesli nastapi blad zaladowania pliku, program wyswietli w konsoli komunikat "ERROR"</p>
+<p>Funkcja rozpoczynajaca odtwarzanie muzyki podczas gry</p>
+<p>Funkcja zapetlajaca odtwarzanie muzyki podczas gry</p>
+<p>&lt; Deklaracja tekstury dla klocka w grze</p>
+<p>&lt; Zaladowanie tekstur dla klockow w grze</p>
+<p>&lt; Wycinanie pojedynczych kwadratow z tekstury wszystkich klockow</p>
+<p>&lt; Zmienna okreslajaca ruch poziomy klocka</p>
+<p>&lt; Zmienna okreslajaca obrot klocka</p>
+<p>&lt; Zmienna okreslajaca kolor klocka</p>
+<p>&lt; Zmienna okreslajaca stan rozpoczecia gry</p>
+<p>&lt; Zmienna losujaca jeden z kolorow klocka</p>
+<p>&lt; Zmienna dla licznika czasu</p>
+<p>&lt; Zmienna powodujaca opoznienie spadania klocka w grze</p>
+<p>&lt; Ustawienie srodka dla obrotu klocka</p>
+<p>Funkcja sprawdzajaca, czy nastapil koniec gry, jesli tak, to zatrzyjmuje soundtrack z gry, odtwarza dzwiek konca gry oraz wyswietla ekran koncowy razem z wynikiem i czeka na wcisniecie klawisza enter</p>
+<p>&lt; Zmienna pozwalajaca na sprawdzanie lini</p>
+<p>&lt; Zmienna pozwalajaca na zliczanie punktow</p>
+<p>&lt; deklaracja stringstream, by moc przekonwertowac typ int na string, aby moc wyswietlic wynik z customowa czcionka</p>
+<p>Funckcja wycinajaca klocki</p>
+<p>Funkcja ustawiajaca klocka</p>
+<p>Funkcja przesuwajaca klocki</p>
+<p>Funckja ustawiajaca wylosowany kolor dla klocka</p>
+<p>Funkcja ustawiajaca cale klocki</p>
+<p>Wyswietlenie ekranu gry</p>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00071">71</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja zmiennych</h2>
+<a id="af5e36a5e70dc7317b3fe14181e94392b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e36a5e70dc7317b3fe14181e94392b">&#9670;&nbsp;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_point.html">Point</a> a[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a42585f3e9c61a77e29f5ce804c647a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a42585f3e9c61a77e29f5ce804c647a">&#9670;&nbsp;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_point.html">Point</a> b[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4dfbb0ce73015e84e59f7a2a6b1c57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4dfbb0ce73015e84e59f7a2a6b1c57f">&#9670;&nbsp;</a></span>disScore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string disScore</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deklaracja zmiennej pomocniczej, dzieki ktorej mozemy zamienic punkty liczone w typie int na typ string i wypisac wynik na ekranie jako tekst </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00015">15</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6f65960378fcbb6c40b6164802344289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f65960378fcbb6c40b6164802344289">&#9670;&nbsp;</a></span>field</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int field[<a class="el" href="_tetris_8cpp.html#a9edc6895d567e0ddcdd3cc20df3f3b4b">M</a>][<a class="el" href="_tetris_8cpp.html#ab2b6b0c222cd1ce70d6a831f57241e59">N</a>] = { 0 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deklaracja tablicy zawierajacej wysokosc i szerokosc pola gry </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00013">13</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a87455fa0ebd69299dadd5699578587f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87455fa0ebd69299dadd5699578587f6">&#9670;&nbsp;</a></span>figures</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int figures[7][4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line">=</div>
+<div class="line">{</div>
+<div class="line">    1,3,5,7, </div>
+<div class="line">    2,4,5,7, </div>
+<div class="line">    3,5,4,6, </div>
+<div class="line">    3,5,4,7, </div>
+<div class="line">    2,3,5,7, </div>
+<div class="line">    3,5,7,6, </div>
+<div class="line">    2,3,4,5, </div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Deklaracja tablicy figur gry Tetris </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00019">19</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9edc6895d567e0ddcdd3cc20df3f3b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9edc6895d567e0ddcdd3cc20df3f3b4b">&#9670;&nbsp;</a></span>M</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int M = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deklaracja stalej zmiennej oznaczajacej wysokosc pola gry </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00011">11</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab2b6b0c222cd1ce70d6a831f57241e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b6b0c222cd1ce70d6a831f57241e59">&#9670;&nbsp;</a></span>N</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int N = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deklaracja stalej zmiennej oznaczajacej szerokosc pola gry </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00012">12</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af7f8f4a4e39e09fdb5e9f02330ecabef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f8f4a4e39e09fdb5e9f02330ecabef">&#9670;&nbsp;</a></span>points</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int points = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deklaracja zmiennej oznaczajacej ilosc zdobytych punktow przez gracza </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_tetris_8cpp_source.html#l00014">14</a> pliku <a class="el" href="_tetris_8cpp_source.html">Tetris.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d67bc218552f43cc03bca8e09a6c5502.html">Tetris</a></li><li class="navelem"><a class="el" href="_tetris_8cpp.html">Tetris.cpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

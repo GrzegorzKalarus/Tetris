@@ -1,0 +1,22 @@
+﻿  Tetris.cpp
+D:\Tetris\Tetris\Tetris.cpp(75,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Tetris\Tetris\Tetris.cpp(90,18): warning C4553: '==': result of expression not used; did you intend '='?
+D:\Tetris\Tetris\Tetris.cpp(143,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Tetris\Tetris\Tetris.cpp(172,58): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Tetris\Tetris\Tetris.cpp(172,40): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\Tetris\Tetris\Tetris.cpp(178,16): warning C4305: '=': truncation from 'double' to 'float'
+D:\Tetris\Tetris\Tetris.cpp(242,24): warning C4553: '==': result of expression not used; did you intend '='?
+D:\Tetris\Tetris\Tetris.cpp(323,34): warning C4305: '=': truncation from 'double' to 'float'
+D:\Tetris\Tetris\Tetris.cpp(337,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Tetris\Tetris\Tetris.cpp(337,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Tetris\Tetris\Tetris.cpp(356,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Tetris\Tetris\Tetris.cpp(356,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Tetris.vcxproj -> D:\Tetris\Debug\Tetris.exe
